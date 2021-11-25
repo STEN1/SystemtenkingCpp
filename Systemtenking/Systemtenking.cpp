@@ -1,7 +1,7 @@
 #include "Systemtenking.h"
 
-#include "imgui.h"
-#include "implot.h"
+#include "Libs/ImGui/imgui.h"
+#include "Libs/ImPlot/implot.h"
 
 #include <vector>
 
@@ -106,7 +106,7 @@ void Systemtenking::PlotAdultFertile()
 void Systemtenking::Plot()
 {
     ImGui::SetNextWindowSize({ 1200, 700 });
-    ImGui::SetNextWindowPos({ 0, 0 });
+    // ImGui::SetNextWindowPos({ 0, 0 });
     ImGui::Begin("Systemtenking");
 
     PlotChildren();
